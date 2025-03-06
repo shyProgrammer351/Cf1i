@@ -16,67 +16,63 @@
 <pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>|       | <br></pre><br>
 <pre style='margin:0;padding:0;'><a href='#7'>7</a>  printf( " \033[5;1f +-------+ \n" );</pre>
 <pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>+-------+ <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#8'>8</a>  sleep(1);</pre><br>
-<pre style='margin:0;padding:0;'><a href='#9'>9</a>  printf( " \033[2J" );</pre><br>
-<pre style='margin:0;padding:0;'><a href='#10'>10</a>  printf( " \033[1;51f +-------+ \n" );</pre>
+<pre style='margin:0;padding:0;'><a href='#8'>8</a>  fflush( stdout );</pre><br>
+<pre style='margin:0;padding:0;'><a href='#9'>9</a>  sleep(1);</pre><br>
+<pre style='margin:0;padding:0;'><a href='#10'>10</a>  printf( " \033[2J" );</pre><br>
+<pre style='margin:0;padding:0;'><a href='#11'>11</a>  printf( " \033[1;51f +-------+ \n" );</pre>
 <pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>                                                  +-------+ <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#11'>11</a>  printf( " \033[2;51f | O     | \n" );</pre>
+<pre style='margin:0;padding:0;'><a href='#12'>12</a>  printf( " \033[2;51f | O     | \n" );</pre>
 <pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>                                                  | O     | <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#12'>12</a>  printf( " \033[3;51f |       | \n" );</pre>
+<pre style='margin:0;padding:0;'><a href='#13'>13</a>  printf( " \033[3;51f |       | \n" );</pre>
 <pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>                                                  |       | <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#13'>13</a>  printf( " \033[4;51f |     O | \n" );</pre>
+<pre style='margin:0;padding:0;'><a href='#14'>14</a>  printf( " \033[4;51f |     O | \n" );</pre>
 <pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>                                                  |     O | <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#14'>14</a>  printf( " \033[5;51f +-------+ \n" );</pre>
+<pre style='margin:0;padding:0;'><a href='#15'>15</a>  printf( " \033[5;51f +-------+ \n" );</pre>
 <pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>                                                  +-------+ <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#15'>15</a>  sleep(1);</pre><br>
-<pre style='margin:0;padding:0;'><a href='#16'>16</a>  printf( " \033[2J" );</pre><br>
-<pre style='margin:0;padding:0;'><a href='#17'>17</a>  printf( " \033[1;31f +-------+ \n" );</pre>
+<pre style='margin:0;padding:0;'><a href='#16'>16</a>  fflush( stdout );</pre><br>
+<pre style='margin:0;padding:0;'><a href='#17'>17</a>  sleep(1);</pre><br>
+<pre style='margin:0;padding:0;'><a href='#18'>18</a>  printf( " \033[2J" );</pre><br>
+<pre style='margin:0;padding:0;'><a href='#19'>19</a>  printf( " \033[1;31f +-------+ \n" );</pre>
 <pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>                              +-------+ <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#18'>18</a>  printf( " \033[2;31f | O     | \n" );</pre>
+<pre style='margin:0;padding:0;'><a href='#20'>20</a>  printf( " \033[2;31f | O     | \n" );</pre>
 <pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>                              | O     | <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#19'>19</a>  printf( " \033[3;31f |   O   | \n" );</pre>
+<pre style='margin:0;padding:0;'><a href='#21'>21</a>  printf( " \033[3;31f |   O   | \n" );</pre>
 <pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>                              |   O   | <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#20'>20</a>  printf( " \033[4;31f |     O | \n" );</pre>
+<pre style='margin:0;padding:0;'><a href='#22'>22</a>  printf( " \033[4;31f |     O | \n" );</pre>
 <pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>                              |     O | <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#21'>21</a>  printf( " \033[5;31f +-------+ \n" );</pre>
+<pre style='margin:0;padding:0;'><a href='#23'>23</a>  printf( " \033[5;31f +-------+ \n" );</pre>
 <pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>                              +-------+ <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#22'>22</a>  sleep(1);</pre><br>
-<pre style='margin:0;padding:0;'><a href='#23'>23</a>  printf( " \033[2J" );</pre><br>
-<pre style='margin:0;padding:0;'><a href='#24'>24</a>  printf( " \033[1;11f +-------+ \n" );</pre>
+<pre style='margin:0;padding:0;'><a href='#24'>24</a>  fflush( stdout );</pre><br>
+<pre style='margin:0;padding:0;'><a href='#25'>25</a>  sleep(1);</pre><br>
+<pre style='margin:0;padding:0;'><a href='#26'>26</a>  printf( " \033[2J" );</pre><br>
+<pre style='margin:0;padding:0;'><a href='#27'>27</a>  printf( " \033[1;11f +-------+ \n" );</pre>
 <pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>          +-------+ <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#25'>25</a>  printf( " \033[2;11f | O   O | \n" );</pre>
+<pre style='margin:0;padding:0;'><a href='#28'>28</a>  printf( " \033[2;11f | O   O | \n" );</pre>
 <pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>          | O   O | <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#26'>26</a>  printf( " \033[3;11f |       | \n" );</pre>
+<pre style='margin:0;padding:0;'><a href='#29'>29</a>  printf( " \033[3;11f |       | \n" );</pre>
 <pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>          |       | <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#27'>27</a>  printf( " \033[4;11f | O   O | \n" );</pre>
+<pre style='margin:0;padding:0;'><a href='#30'>30</a>  printf( " \033[4;11f | O   O | \n" );</pre>
 <pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>          | O   O | <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#28'>28</a>  printf( " \033[5;11f +-------+ \n" );</pre>
+<pre style='margin:0;padding:0;'><a href='#31'>31</a>  printf( " \033[5;11f +-------+ \n" );</pre>
 <pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>          +-------+ <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#29'>29</a>  sleep(1);</pre><br>
-<pre style='margin:0;padding:0;'><a href='#30'>30</a>  printf( " \033[2J" );</pre><br>
-<pre style='margin:0;padding:0;'><a href='#31'>31</a>  printf( " \033[1;21f +-------+ \n" );</pre>
+<pre style='margin:0;padding:0;'><a href='#32'>32</a>  fflush( stdout );</pre><br>
+<pre style='margin:0;padding:0;'><a href='#33'>33</a>  sleep(1);</pre><br>
+<pre style='margin:0;padding:0;'><a href='#34'>34</a>  printf( " \033[2J" );</pre><br>
+<pre style='margin:0;padding:0;'><a href='#35'>35</a>  printf( " \033[1;21f +-------+ \n" );</pre>
 <pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>                    +-------+ <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#32'>32</a>  printf( " \033[2;21f | O   O | \n" );</pre>
+<pre style='margin:0;padding:0;'><a href='#36'>36</a>  printf( " \033[2;21f | O   O | \n" );</pre>
 <pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>                    | O   O | <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#33'>33</a>  printf( " \033[3;21f |   O   | \n" );</pre>
+<pre style='margin:0;padding:0;'><a href='#37'>37</a>  printf( " \033[3;21f |   O   | \n" );</pre>
 <pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>                    |   O   | <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#34'>34</a>  printf( " \033[4;21f | O   O | \n" );</pre>
+<pre style='margin:0;padding:0;'><a href='#38'>38</a>  printf( " \033[4;21f | O   O | \n" );</pre>
 <pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>                    | O   O | <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#35'>35</a>  printf( " \033[5;21f +-------+ \n" );</pre>
+<pre style='margin:0;padding:0;'><a href='#39'>39</a>  printf( " \033[5;21f +-------+ \n" );</pre>
 <pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>                    +-------+ <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#36'>36</a>  sleep(1);</pre><br>
-<pre style='margin:0;padding:0;'><a href='#37'>37</a>  printf( " \033[2J" );</pre><br>
-<pre style='margin:0;padding:0;'><a href='#38'>38</a>  printf( " \033[1;41f +-------+ \n" );</pre>
+<pre style='margin:0;padding:0;'><a href='#40'>40</a>  fflush( stdout );</pre><br>
+<pre style='margin:0;padding:0;'><a href='#41'>41</a>  sleep(1);</pre><br>
+<pre style='margin:0;padding:0;'><a href='#42'>42</a>  printf( " \033[2J" );</pre><br>
+<pre style='margin:0;padding:0;'><a href='#43'>43</a>  printf( " \033[1;41f +-------+ \n" );</pre>
 <pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>                                        +-------+ <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#39'>39</a>  printf( " \033[2;41f | O   O | \n" );</pre>
-<pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>                                        | O   O | <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#40'>40</a>  printf( " \033[3;41f | O   O | \n" );</pre>
-<pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>                                        | O   O | <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#41'>41</a>  printf( " \033[4;41f | O   O | \n" );</pre>
-<pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>                                        | O   O | <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#42'>42</a>  printf( " \033[5;41f +-------+ \n" );</pre>
-<pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>                                        +-------+ <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#43'>43</a>  return 0;</pre><br>
  	   				<br><h4>프로그램 코드</h4> 				<pre>	
 	#include &lt;stdio.h&gt;
 	#include &lt;unistd.h&gt;
@@ -89,47 +85,53 @@
 <a href='javascript:history.back();' name='5'>5</a>		printf( " \033[3;1f |   O   | \n" );
 <a href='javascript:history.back();' name='6'>6</a>		printf( " \033[4;1f |       | \n" );
 <a href='javascript:history.back();' name='7'>7</a>		printf( " \033[5;1f +-------+ \n" );
+<a href='javascript:history.back();' name='8'>8</a>		fflush( stdout );
 		
-<a href='javascript:history.back();' name='8'>8</a>		sleep(1);
-<a href='javascript:history.back();' name='9'>9</a>		printf( " \033[2J" );
-<a href='javascript:history.back();' name='10'>10</a>		printf( " \033[1;51f +-------+ \n" );
-<a href='javascript:history.back();' name='11'>11</a>		printf( " \033[2;51f | O     | \n" );
-<a href='javascript:history.back();' name='12'>12</a>		printf( " \033[3;51f |       | \n" );
-<a href='javascript:history.back();' name='13'>13</a>		printf( " \033[4;51f |     O | \n" );
-<a href='javascript:history.back();' name='14'>14</a>		printf( " \033[5;51f +-------+ \n" );
+<a href='javascript:history.back();' name='9'>9</a>		sleep(1);
+<a href='javascript:history.back();' name='10'>10</a>		printf( " \033[2J" );
+<a href='javascript:history.back();' name='11'>11</a>		printf( " \033[1;51f +-------+ \n" );
+<a href='javascript:history.back();' name='12'>12</a>		printf( " \033[2;51f | O     | \n" );
+<a href='javascript:history.back();' name='13'>13</a>		printf( " \033[3;51f |       | \n" );
+<a href='javascript:history.back();' name='14'>14</a>		printf( " \033[4;51f |     O | \n" );
+<a href='javascript:history.back();' name='15'>15</a>		printf( " \033[5;51f +-------+ \n" );
+<a href='javascript:history.back();' name='16'>16</a>		fflush( stdout );
 		
-<a href='javascript:history.back();' name='15'>15</a>		sleep(1);
-<a href='javascript:history.back();' name='16'>16</a>		printf( " \033[2J" );
-<a href='javascript:history.back();' name='17'>17</a>		printf( " \033[1;31f +-------+ \n" );
-<a href='javascript:history.back();' name='18'>18</a>		printf( " \033[2;31f | O     | \n" );
-<a href='javascript:history.back();' name='19'>19</a>		printf( " \033[3;31f |   O   | \n" );
-<a href='javascript:history.back();' name='20'>20</a>		printf( " \033[4;31f |     O | \n" );
-<a href='javascript:history.back();' name='21'>21</a>		printf( " \033[5;31f +-------+ \n" );
+<a href='javascript:history.back();' name='17'>17</a>		sleep(1);
+<a href='javascript:history.back();' name='18'>18</a>		printf( " \033[2J" );
+<a href='javascript:history.back();' name='19'>19</a>		printf( " \033[1;31f +-------+ \n" );
+<a href='javascript:history.back();' name='20'>20</a>		printf( " \033[2;31f | O     | \n" );
+<a href='javascript:history.back();' name='21'>21</a>		printf( " \033[3;31f |   O   | \n" );
+<a href='javascript:history.back();' name='22'>22</a>		printf( " \033[4;31f |     O | \n" );
+<a href='javascript:history.back();' name='23'>23</a>		printf( " \033[5;31f +-------+ \n" );
+<a href='javascript:history.back();' name='24'>24</a>		fflush( stdout );
 		
-<a href='javascript:history.back();' name='22'>22</a>		sleep(1);
-<a href='javascript:history.back();' name='23'>23</a>		printf( " \033[2J" );
-<a href='javascript:history.back();' name='24'>24</a>		printf( " \033[1;11f +-------+ \n" );
-<a href='javascript:history.back();' name='25'>25</a>		printf( " \033[2;11f | O   O | \n" );
-<a href='javascript:history.back();' name='26'>26</a>		printf( " \033[3;11f |       | \n" );
-<a href='javascript:history.back();' name='27'>27</a>		printf( " \033[4;11f | O   O | \n" );
-<a href='javascript:history.back();' name='28'>28</a>		printf( " \033[5;11f +-------+ \n" );
+<a href='javascript:history.back();' name='25'>25</a>		sleep(1);
+<a href='javascript:history.back();' name='26'>26</a>		printf( " \033[2J" );
+<a href='javascript:history.back();' name='27'>27</a>		printf( " \033[1;11f +-------+ \n" );
+<a href='javascript:history.back();' name='28'>28</a>		printf( " \033[2;11f | O   O | \n" );
+<a href='javascript:history.back();' name='29'>29</a>		printf( " \033[3;11f |       | \n" );
+<a href='javascript:history.back();' name='30'>30</a>		printf( " \033[4;11f | O   O | \n" );
+<a href='javascript:history.back();' name='31'>31</a>		printf( " \033[5;11f +-------+ \n" );
+<a href='javascript:history.back();' name='32'>32</a>		fflush( stdout );
 		
-<a href='javascript:history.back();' name='29'>29</a>		sleep(1);
-<a href='javascript:history.back();' name='30'>30</a>		printf( " \033[2J" );
-<a href='javascript:history.back();' name='31'>31</a>		printf( " \033[1;21f +-------+ \n" );
-<a href='javascript:history.back();' name='32'>32</a>		printf( " \033[2;21f | O   O | \n" );
-<a href='javascript:history.back();' name='33'>33</a>		printf( " \033[3;21f |   O   | \n" );
-<a href='javascript:history.back();' name='34'>34</a>		printf( " \033[4;21f | O   O | \n" );
-<a href='javascript:history.back();' name='35'>35</a>		printf( " \033[5;21f +-------+ \n" );
+<a href='javascript:history.back();' name='33'>33</a>		sleep(1);
+<a href='javascript:history.back();' name='34'>34</a>		printf( " \033[2J" );
+<a href='javascript:history.back();' name='35'>35</a>		printf( " \033[1;21f +-------+ \n" );
+<a href='javascript:history.back();' name='36'>36</a>		printf( " \033[2;21f | O   O | \n" );
+<a href='javascript:history.back();' name='37'>37</a>		printf( " \033[3;21f |   O   | \n" );
+<a href='javascript:history.back();' name='38'>38</a>		printf( " \033[4;21f | O   O | \n" );
+<a href='javascript:history.back();' name='39'>39</a>		printf( " \033[5;21f +-------+ \n" );
+<a href='javascript:history.back();' name='40'>40</a>		fflush( stdout );
 		
-<a href='javascript:history.back();' name='36'>36</a>		sleep(1);
-<a href='javascript:history.back();' name='37'>37</a>		printf( " \033[2J" );
-<a href='javascript:history.back();' name='38'>38</a>		printf( " \033[1;41f +-------+ \n" );
-<a href='javascript:history.back();' name='39'>39</a>		printf( " \033[2;41f | O   O | \n" );
-<a href='javascript:history.back();' name='40'>40</a>		printf( " \033[3;41f | O   O | \n" );
-<a href='javascript:history.back();' name='41'>41</a>		printf( " \033[4;41f | O   O | \n" );
-<a href='javascript:history.back();' name='42'>42</a>		printf( " \033[5;41f +-------+ \n" );
+<a href='javascript:history.back();' name='41'>41</a>		sleep(1);
+<a href='javascript:history.back();' name='42'>42</a>		printf( " \033[2J" );
+<a href='javascript:history.back();' name='43'>43</a>		printf( " \033[1;41f +-------+ \n" );
+<a href='javascript:history.back();' name='44'>44</a>		printf( " \033[2;41f | O   O | \n" );
+<a href='javascript:history.back();' name='45'>45</a>		printf( " \033[3;41f | O   O | \n" );
+<a href='javascript:history.back();' name='46'>46</a>		printf( " \033[4;41f | O   O | \n" );
+<a href='javascript:history.back();' name='47'>47</a>		printf( " \033[5;41f +-------+ \n" );
+<a href='javascript:history.back();' name='48'>48</a>		fflush( stdout );
 		
-<a href='javascript:history.back();' name='43'>43</a>		return 0;
+<a href='javascript:history.back();' name='49'>49</a>		return 0;
 	}
 	</pre> 				<br><br><br><br><br><br><br><br> &nbsp;  			</div> 		</div> 	</body> </html> 
