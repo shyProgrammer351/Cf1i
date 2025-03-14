@@ -3,9 +3,7 @@
 |   O   | |       | |   O   | |   O   | | O   O | |       | 
 |       | | O   O | | O   O | |     O | | O   O | |     O | 
 +-------+ +-------+ +-------+ +-------+ +-------+ +-------+ </div> 
-</pre><br> 				<h4>프로그램의 실행순서(43개) 및 실행상태</h4>
-<pre style='margin:0;padding:0;'><a href='#1'>1</a> int main() {</pre><br>
-<pre style='margin:0;padding:0;'><a href='#2'>2</a>  printf( " \033[2J" );</pre><br>
+</pre><br> 				<h4>1 2 이후의 실행순서(10개) 및 실행상태</h4>
 <pre style='margin:0;padding:0;'><a href='#3'>3</a>  printf( " \033[1;1f +-------+ \n" );</pre>
 <pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>+-------+ <br></pre><br>
 <pre style='margin:0;padding:0;'><a href='#4'>4</a>  printf( " \033[2;1f |       | \n" );</pre>
@@ -23,56 +21,6 @@
 <pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>                                                  +-------+ <br></pre><br>
 <pre style='margin:0;padding:0;'><a href='#12'>12</a>  printf( " \033[2;51f | O     | \n" );</pre>
 <pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>                                                  | O     | <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#13'>13</a>  printf( " \033[3;51f |       | \n" );</pre>
-<pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>                                                  |       | <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#14'>14</a>  printf( " \033[4;51f |     O | \n" );</pre>
-<pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>                                                  |     O | <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#15'>15</a>  printf( " \033[5;51f +-------+ \n" );</pre>
-<pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>                                                  +-------+ <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#16'>16</a>  fflush( stdout );</pre><br>
-<pre style='margin:0;padding:0;'><a href='#17'>17</a>  sleep(1);</pre><br>
-<pre style='margin:0;padding:0;'><a href='#18'>18</a>  printf( " \033[2J" );</pre><br>
-<pre style='margin:0;padding:0;'><a href='#19'>19</a>  printf( " \033[1;31f +-------+ \n" );</pre>
-<pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>                              +-------+ <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#20'>20</a>  printf( " \033[2;31f | O     | \n" );</pre>
-<pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>                              | O     | <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#21'>21</a>  printf( " \033[3;31f |   O   | \n" );</pre>
-<pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>                              |   O   | <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#22'>22</a>  printf( " \033[4;31f |     O | \n" );</pre>
-<pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>                              |     O | <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#23'>23</a>  printf( " \033[5;31f +-------+ \n" );</pre>
-<pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>                              +-------+ <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#24'>24</a>  fflush( stdout );</pre><br>
-<pre style='margin:0;padding:0;'><a href='#25'>25</a>  sleep(1);</pre><br>
-<pre style='margin:0;padding:0;'><a href='#26'>26</a>  printf( " \033[2J" );</pre><br>
-<pre style='margin:0;padding:0;'><a href='#27'>27</a>  printf( " \033[1;11f +-------+ \n" );</pre>
-<pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>          +-------+ <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#28'>28</a>  printf( " \033[2;11f | O   O | \n" );</pre>
-<pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>          | O   O | <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#29'>29</a>  printf( " \033[3;11f |       | \n" );</pre>
-<pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>          |       | <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#30'>30</a>  printf( " \033[4;11f | O   O | \n" );</pre>
-<pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>          | O   O | <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#31'>31</a>  printf( " \033[5;11f +-------+ \n" );</pre>
-<pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>          +-------+ <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#32'>32</a>  fflush( stdout );</pre><br>
-<pre style='margin:0;padding:0;'><a href='#33'>33</a>  sleep(1);</pre><br>
-<pre style='margin:0;padding:0;'><a href='#34'>34</a>  printf( " \033[2J" );</pre><br>
-<pre style='margin:0;padding:0;'><a href='#35'>35</a>  printf( " \033[1;21f +-------+ \n" );</pre>
-<pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>                    +-------+ <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#36'>36</a>  printf( " \033[2;21f | O   O | \n" );</pre>
-<pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>                    | O   O | <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#37'>37</a>  printf( " \033[3;21f |   O   | \n" );</pre>
-<pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>                    |   O   | <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#38'>38</a>  printf( " \033[4;21f | O   O | \n" );</pre>
-<pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>                    | O   O | <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#39'>39</a>  printf( " \033[5;21f +-------+ \n" );</pre>
-<pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>                    +-------+ <br></pre><br>
-<pre style='margin:0;padding:0;'><a href='#40'>40</a>  fflush( stdout );</pre><br>
-<pre style='margin:0;padding:0;'><a href='#41'>41</a>  sleep(1);</pre><br>
-<pre style='margin:0;padding:0;'><a href='#42'>42</a>  printf( " \033[2J" );</pre><br>
-<pre style='margin:0;padding:0;'><a href='#43'>43</a>  printf( " \033[1;41f +-------+ \n" );</pre>
-<pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>                                        +-------+ <br></pre><br>
  	   				<br><h4>프로그램 코드</h4> 				<pre>	
 	#include &lt;stdio.h&gt;
 	#include &lt;unistd.h&gt;
